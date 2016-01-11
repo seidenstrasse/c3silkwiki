@@ -1,4 +1,5 @@
-codowik
-=======
+c3silkwiki
+==========
 
-now convert dokuwiki engine into a professional wiki with codowik template
+The dokuwiki template for c3seidenstrasse.
+Based on http://www.dokuwiki.org/template:codowik

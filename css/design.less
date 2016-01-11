@@ -2,9 +2,9 @@
  * codologic CSS
  *
  * @link     http://codologic.com
- * 
+ *
  * Author: Avinash D'Silva <avinash.roshan.dsilva@gmail.com|codologic.com>
- * 
+ *
  * Previous Authors:
  * @author   Anika Henke <anika@selfthinker.org>
  * @author   Clarence Lee <clarencedglee@gmail.com>
@@ -93,7 +93,7 @@
         margin-left: 0;
         display: block;
         overflow: hidden;
-       
+
         text-overflow: ellipsis;
     }
 }
@@ -197,11 +197,11 @@
             width: 19em;
             border-radius:12px;
             outline:none;
-            
+
             padding: .35em 22px .35em .1em;
             padding-left:5px;
         }
-        
+
           .ajax_qsearch{
         display:none;
         position:static;
@@ -209,7 +209,7 @@
         background: #FFFFFF;
             ul{
             text-align:right;
-            
+
                 a{color:#2b73b7;}
             }
         }
@@ -229,7 +229,7 @@
     ul {
        margin-top: 0.5em;
     }
-     
+
 }
 
 [dir=rtl] #dokuwiki__sitetools {
@@ -239,8 +239,8 @@
         input.edit {
             padding: .35em .1em .35em 22px;
         }
-        
-      
+
+
 
         input.button {
             background-position: 5px 0;
@@ -262,45 +262,51 @@
 
 .codowiki_west{
 
-background:#343131 !important;
+    background-color:#343131 !important;
+    background-image: url('images/pipes.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: 0px 300px !important;
 }
 
 .codo_active{
 
 
         background:#FFF;
-        color:black !important;
-        font-weight:bold;
-          
+
+
+        a {
+            font-weight:bold;
+            color:black !important;
+        }
 
 }
 
 .codo_side_content{
 
+    color:#b3b3b3;
+    padding: 0px;
 
     ul{
-    padding:0px;
-
+        padding: 0px;
+        list-style: none;
     }
 
 
     li{
+        margin-left: 0px;
+        display: block;
 
-    
-
-        a{
-        display:block;
-        color:#b3b3b3;s
-        }
-
-        a:hover{
-        text-decoration:none;
-        background:#4e4a4a;
+        a {
+            color:#b3b3b3;
+            padding-left: 10px;
         }
 
 
-            margin:0;
-       
+        :hover{
+            text-decoration:none;
+            background:#4e4a4a;
+        }
+
 
     }
 
@@ -309,13 +315,13 @@ background:#343131 !important;
 
 .codowiki_west_header{
 
-background-color: #2980B9;
+//background-color: #F0AE10;
 text-align: center;
-color: #FCFCFC;
+color: #ffffff;
 
 a{
 
-color:#FCFCFC;
+color:#ffffff;
 text-decoration:none !important;
 
 }
@@ -341,12 +347,12 @@ margin: 20px 0px 20px 0px;
     text-align:center;
     padding: 0 0 0 0;
        padding-bottom:5px;
-   
+
     ul {
        margin-top: 0;
-    
+
     }
-    
+
     li{
     font-size:10px;
     display:inline;

@@ -1,7 +1,7 @@
-base     codowik
-author   Avinash D Silva
-email    avinash.roshan.dsilva@gmail.com
-date     2013-11-23
-name     Codowik Template
-desc     Template built for building great documentation
-url      http://www.dokuwiki.org/template:codowik
+base     c3silkwiki
+author   Sebastian
+email    sebastian.at.sebastians-site.de
+date     2016-01-11
+name     c3silkwiki Template
+desc     Based on http://www.dokuwiki.org/template:codowik
+url      https://github.com/seidenstrasse/c3silkwiki

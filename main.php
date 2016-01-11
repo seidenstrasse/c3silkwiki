@@ -3,9 +3,9 @@
  * codologic Template
  *
  * @link     http://dokuwiki.org/template
- * 
+ *
  * Author: Avinash D'Silva <avinash.roshan.dsilva@gmail.com|codologic.com>
- * 
+ *
  * Previous Authors:
  * @author   Anika Henke <anika@selfthinker.org>
  * @author   Clarence Lee <clarencedglee@gmail.com>
@@ -57,7 +57,7 @@ jQuery(function ()
 
     jQuery(".codo_side_content [href]").each(function () {
         if (this.href == window.location.href) {
-            jQuery(this).addClass("codo_active");
+            jQuery(this).parents(".li").addClass("codo_active");
         }
     });
 
@@ -85,10 +85,10 @@ jQuery(function ()
 </head>
 
 <body>
-    
+
      <div id="container">
             <div class="ui-layout-center">
-    
+
     <!--[if lte IE 7 ]><div id="IE7"><![endif]--><!--[if IE 8 ]><div id="IE8"><![endif]-->
     <div id="dokuwiki__site"><div id="dokuwiki__top" class="site <?php echo tpl_classes(); ?> <?php
         /*echo ($showSidebar) ? 'showSidebar' : '';*/ ?> <?php /* echo ($hasSidebar) ? 'hasSidebar' : '';*/ ?>">
@@ -158,12 +158,12 @@ jQuery(function ()
     <div class="no"><?php tpl_indexerWebBug() /* provide DokuWiki housekeeping, required in all templates */ ?></div>
     <div id="screen__mode" class="no"></div><?php /* helper to detect CSS media query in script.js */ ?>
     <!--[if ( lte IE 7 | IE 8 ) ]></div><![endif]-->
-    
+
     </div>
 
             <div class="ui-layout-west codowiki_west">
-            
-            
+
+
             <div class='codowiki_west_header'>
             <div class="headings group">
         <ul class="a11y skip">
@@ -173,7 +173,7 @@ jQuery(function ()
         <h1><?php
             // get logo either out of the template images folder or data/media folder
             $logoSize = array();
-            $logo = tpl_getMediaFile(array(':wiki:logo.png', ':logo.png', 'images/codo_logo_s.png'), false, $logoSize);
+            $logo = tpl_getMediaFile(array(':wiki:logo.png', ':logo.png', 'images/logo.png'), false, $logoSize);
 
             // display logo and wiki title in a link to the home page
             tpl_link(
@@ -186,9 +186,9 @@ jQuery(function ()
             <p class="claim"><?php echo $conf['tagline']; ?></p>
         <?php endif ?>
     </div>
-            
-            
-            
+
+
+
         <div id="dokuwiki__sitetools">
             <h3 class="a11y"><?php echo $lang['site_tools']; ?></h3>
             <?php tpl_searchform(); ?>
@@ -203,11 +203,11 @@ jQuery(function ()
                 ?>
             </ul>
         </div>
-            
+
             </div>
-            
-            
-            
+
+
+
                 <?php if($showSidebar): ?>
                 <!-- ********** ASIDE ********** -->
                     <div class="codo_side_content">
@@ -216,16 +216,16 @@ jQuery(function ()
                         <?php tpl_include_page($conf['sidebar'], 1, 1) ?>
                         <?php tpl_includeFile('sidebarfooter.html') ?>
                     </div>
-                
+
             <?php endif; ?>
-            
+
             <!--below div is end WEST pane-->
             </div>
-    
-   
+
+
     <!--below div is end content-->
     </div>
-    
+
       <?php // include('tpl_footer.php') ?>
 </body>
 </html>
